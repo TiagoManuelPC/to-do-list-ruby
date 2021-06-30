@@ -17,8 +17,7 @@ class List
   end
 
   def update(item_r, item_a)
-    @list.delete(item_r)
-    @list << item_a
+    @list[@list.index(item_r)] = item_a
   end
 
 end
